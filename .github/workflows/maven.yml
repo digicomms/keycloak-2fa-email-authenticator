@@ -43,7 +43,7 @@ jobs:
     - name: Release
       uses: softprops/action-gh-release@v2
       with:
-        files: target/keycloak-2fa-email-authenticator*
+        files: target/Keycloak2faEmailAuthenticator*.jar
         name: Keycloak 2FA Email Authenticator v${{ steps.date.outputs.date }}
         tag_name: 'refs/tags/${{ steps.date.outputs.date }}'
         make_latest: true
