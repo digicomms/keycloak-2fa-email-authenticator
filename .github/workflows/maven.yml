@@ -42,5 +42,6 @@ jobs:
       with:
         files: target/keycloak-2fa-email-authenticator*
         name: Keycloak 2FA Email Authenticator v${{ steps.date.outputs.date }}
+        tag_name: 'refs/tags/${{ steps.date.outputs.date }}'
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
